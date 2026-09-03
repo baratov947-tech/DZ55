@@ -1,0 +1,74 @@
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 5px solid #646cff;
+}
+
+.title {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.loading {
+    font-size: 18px;
+    color: #888;
+    font-style: italic;
+    padding: 50px 0;
+    animation: pulse 1.5s infinite;
+}
+
+.quoteBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    font-size: 22px;
+    color: #2c3e50;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.author {
+    font-size: 16px;
+    color: #7f8c8d;
+    font-weight: 600;
+    margin-bottom: 30px;
+    align-self: flex-end; /* Автор прижат к правому краю */
+}
+
+.button {
+    background-color: #646cff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.button:hover {
+    background-color: #535bf2;
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
